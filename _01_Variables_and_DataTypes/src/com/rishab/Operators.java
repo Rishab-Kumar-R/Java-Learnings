@@ -97,6 +97,57 @@ public class Operators {
         int l = 2;
         int m = (k > l) ? k : l;
         System.out.println("m: " + m); // 2
+
+        System.out.println();
+
+        // instanceof operator
+        String n = "Hello";
+        System.out.println("n instanceof String: " + (n instanceof String)); // true
+
+        System.out.println();
+
+        // Operator precedence
+        /*
+         * determines the grouping of terms in an expression. This affects how an expression is evaluated
+         * Certain operators have higher precedence than others
+         * 
+         * The following table lists the operators in order of precedence, from highest to lowest
+         * 
+         * |--------------------|-------------------------------|-------------------|
+         * | Category           | Operator(s)					| Associativity     |
+         * |--------------------|-------------------------------|-------------------|
+         * | Parentheses	    | () [] .						| Left to right     |
+         * | Postfix		    | expr++ expr--				    | Left to right     |
+         * | Unary		        | ++expr --expr +expr -expr	    | Right to left     |
+         * | Unary      	    | ~ !							| Right to left     |
+         * | Multiplicative     | * / %						    | Left to right     |
+         * | Additive   	    | + -							| Left to right     |
+         * | Shift		        | << >> >>>					    | Left to right     |
+         * | Relational	        | < > <= >= instanceof		    | Left to right     |
+         * | Equality		    | == !=						    | Left to right     |
+         * | Bitwise AND	    | &							    | Left to right     |
+         * | Bitwise XOR	    | ^							    | Left to right     |
+         * | Bitwise OR	        | |							    | Left to right     |
+         * | Logical AND	    | &&							| Left to right     |
+         * | Logical OR	        | ||							| Left to right     |
+         * | Ternary		    | ? :							| Right to left     |
+         * | Assignment	        | = += -= *= /= %= &= ^= |=	    | Right to left     |
+         * |--------------------|-------------------------------|-------------------|
+         */
+
+        double myFirstValue = 20.00d;
+        double mySecondValue = 80.00d;
+        double myTotalValue = myFirstValue + mySecondValue * 100.00d; // operator precedence in action
+        System.out.println("myTotalValue: " + myTotalValue); // 8020.0
+        double myRemainder = myTotalValue % 40.00d;
+        System.out.println("myRemainder: " + myRemainder); // 20.0
+        boolean isNoRemainder = (myRemainder == 0) ? true : false;
+        System.out.println("isNoRemainder: " + isNoRemainder); // false
+        if (!isNoRemainder) {
+            System.out.println("Got some remainder");
+        } else {
+            System.out.println("No remainder");
+        }
         
 	}
 }
