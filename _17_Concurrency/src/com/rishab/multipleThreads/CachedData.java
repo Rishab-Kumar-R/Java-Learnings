@@ -1,0 +1,42 @@
+package com.rishab.multipleThreads;
+
+import java.util.concurrent.TimeUnit;
+
+public class CachedData {
+
+    private volatile boolean flag = false;
+
+    public void toggleFlag() {
+        flag = !flag;
+    }
+
+    public boolean isReady() {
+        return flag;
+    }
+
+    public static void main(String[] args) {
+
+        CachedData example = new CachedData();
+
+        Thread writerThread = new Thread(() -> {
+            try {
+                TimeUnit.SECONDS.sleep(1);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            example.toggleFlag();
+            System.out.println("A. Flag is now " + example.isReady());
+        });
+
+        Thread readerThread = new Thread(() -> {
+            while(!example.isReady()) {
+
+            }
+            System.out.println("B. Flag is now " + example.isReady());
+        });
+
+        writerThread.start();
+        readerThread.start();
+
+    }
+}
