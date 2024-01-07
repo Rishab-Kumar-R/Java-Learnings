@@ -1,0 +1,11 @@
+Directory contents: 
+D:\Development\Java-Learnings\_16_Working_With_Files\public
+D:\Development\Java-Learnings\_16_Working_With_Files\public\assets
+D:\Development\Java-Learnings\_16_Working_With_Files\public\assets\images
+D:\Development\Java-Learnings\_16_Working_With_Files\public\assets\images\index.txt
+D:\Development\Java-Learnings\_16_Working_With_Files\public\assets\images\indexCopy.txt
+D:\Development\Java-Learnings\_16_Working_With_Files\public\assets\index.txt
+D:\Development\Java-Learnings\_16_Working_With_Files\public\assets\indexCopy.txt
+D:\Development\Java-Learnings\_16_Working_With_Files\public\index.txt
+D:\Development\Java-Learnings\_16_Working_With_Files\public\indexCopy.txt
+Generated: 2023-12-14T13:25:46.880414

@@ -1,0 +1,11 @@
+Student Id,Country Code,Enrolled Year,Age,Gender,Experienced,Course Code,Engagement Month,Engagement Year,Engagement Type
+1,IN,1,2021,33,F,true,Java,MAY,2021,Lecture 1
+1,IN,1,2021,33,F,true,Python,MAY,2022,Lecture 6
+2,US,8,2023,77,F,false,Java,APRIL,2023,Lecture 2
+2,US,8,2023,77,F,false,Python,SEPTEMBER,2023,Lecture 13
+3,IN,2,2019,44,M,true,Java,MARCH,2022,Lecture 12
+3,IN,2,2019,44,M,true,Python,JUNE,2022,Lecture 8
+4,AU,9,2017,75,F,false,Java,JULY,2019,Lecture 11
+4,AU,9,2017,75,F,false,Python,APRIL,2017,Lecture 6
+5,GB,9,2016,25,F,false,Java,NOVEMBER,2020,Lecture 9
+5,GB,9,2016,25,F,false,Python,MARCH,2020,Lecture 8
